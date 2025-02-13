@@ -4,6 +4,5 @@ const capitalize = (text) => {
 };
 
 capitalize('hello');
-capitalize('how are you');
 
 export default capitalize;
