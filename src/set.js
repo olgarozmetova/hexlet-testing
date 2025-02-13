@@ -1,8 +1,7 @@
 const set = (obj, key, value) => {
-  if (!(key in obj)) {
-    return { ...obj, [key]: value };
+  if (!Object.hasOwn(obj, key)) {
+    obj[key] = value;
   }
-  return obj;
 };
 
 export default set;
